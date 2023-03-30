@@ -1,0 +1,24 @@
+ Singleton Class or Singleton Design Pattern
+-------------------------------------------
+- Singleton  class is a process of creating only one object or only 1
+instance for a class.
+
+Rules for achieving Singleton Design Pattern:
+---------------------------------------------
+1. Declare a private constructor. (Object creation can be done only within the same class) 
+
+2. Declare a public static helper method, which will create an instance and returns the instance.
+(helper is static because, object creation is not possible, if it is static we can access it using 
+ClassName)
+
+3.Declare a private static non primitive reference variable.
+
+
+Note:
+It is always a good practice to have the helper method name as getInstance().
+
+Steps performed within the helper method:
+-----------------------------------------
+1. checking if the reference variable is null or not.
+2.if the reference variable is null, we are creating an object & storing  it into the reference variable.
+3.returning the reference variable(Object).
